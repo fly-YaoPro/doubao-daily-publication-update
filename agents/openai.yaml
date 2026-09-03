@@ -1,0 +1,4 @@
+interface:
+  display_name: "豆包每日发布表更新"
+  short_description: "逐机构核对当日发布，去重补录客户表并回填机构颜色与公开互动数据"
+  default_prompt: "使用 $doubao-daily-publication-update 核对全部机构当日发布，先只读盘点，按规则补录客户表、机构色和可核验互动数据。"
