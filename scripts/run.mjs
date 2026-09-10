@@ -2,7 +2,7 @@ import { spawn } from "node:child_process";
 import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 
-const workspace = process.env.DOUNI_WORKSPACE || "E:\\豆包创作线Agent";
+const workspace = resolve(process.env.DOUNI_WORKSPACE || process.cwd());
 const engine = resolve(workspace, "scripts", "daily-publication-update-trial.mjs");
 if (!existsSync(engine)) {
   process.stderr.write(`找不到每日发布更新执行器：${engine}\n`);
